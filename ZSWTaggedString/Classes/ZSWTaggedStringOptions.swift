@@ -32,8 +32,8 @@ extension ZSWTaggedStringOptions {
      - Static: Always returns the same attributes.
      */
     public enum Attributes {
-        case Dynamic(DynamicAttributes)
-        case Static([String: AnyObject])
+        case dynamic(DynamicAttributes)
+        case static([String: AnyObject])
         
         init(wrapper: ZSWTaggedStringAttribute) {
             if let dictionary = wrapper.staticDictionary {
