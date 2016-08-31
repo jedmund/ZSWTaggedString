@@ -33,7 +33,7 @@ extension ZSWTaggedStringOptions {
      */
     public enum Attributes {
         case dynamic(DynamicAttributes)
-        case static([String: Any])
+        case `static`([String: Any])
         
         init(wrapper: ZSWTaggedStringAttribute) {
             if let dictionary = wrapper.staticDictionary {
